@@ -1,0 +1,8 @@
+.col-sm-10.no-float {
+ float: none;
+}
+
+.col-sm-10 {
+display: table-cell;
+float: none;
+}

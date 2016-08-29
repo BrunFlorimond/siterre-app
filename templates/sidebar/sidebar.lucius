@@ -1,0 +1,25 @@
+.brand {
+ margin-bottom: 20px;
+ }
+
+.sidebar {
+border-right: solid 1px #E3E3E3;
+}
+
+.user{
+margin: 40px 0px;
+}
+
+.col-sm-2.no-float {
+float: none;
+}
+
+.col-sm-2 {
+display:table-cell;
+}
+
+.row {
+ height: 100%;
+ display: table-row;
+}
+

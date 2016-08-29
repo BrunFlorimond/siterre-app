@@ -1,0 +1,4 @@
+$(document).ready(function(){
+$('.'+#{toJSON handlerName}.toLowerCase()).addClass('active');
+alert(('.'+#{toJSON handlerName}.toLowerCase()))
+})

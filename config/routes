@@ -7,3 +7,9 @@
 / HomeR GET POST
 
 /comments CommentR POST
+/recette RecetteR GET POST
+/materiau MateriauR GET POST
+/resultats-melanges ResultatsMelangesR GET
+/camions CamionsR GET POST
+/carte CarteR GET POST
+/resultats-socio-eco ResultatsSocEcoR GET

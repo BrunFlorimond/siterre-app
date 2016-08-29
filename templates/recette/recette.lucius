@@ -1,0 +1,16 @@
+.col-sm-10.no-float {
+ float: none;
+}
+
+.col-sm-10 {
+display: table-cell;
+float: none;
+}
+
+.title {
+text-align: center;
+border-bottom: solid 1px #E3E3E3;
+padding: 0px 0px 10px 0px;
+margin: 0px 0px 15px 0px;
+
+}

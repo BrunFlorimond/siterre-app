@@ -1,0 +1,5 @@
+<.col-sm-10 .no-float>
+ <.title>
+  <h1> #{title}
+ <.main-recette>
+  <button .btn .btn-success">Hello

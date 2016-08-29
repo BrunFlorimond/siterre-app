@@ -1,0 +1,10 @@
+module Handler.ResultatsMelanges where
+
+import Import
+
+getResultatsMelangesR :: Handler Html
+getResultatsMelangesR =
+    defaultLayout $ do
+    let title = "Listes des mélanges possibles" :: Text
+    $(widgetFile "sidebar/sidebar")
+    $(widgetFile "resultats-melanges/resultats-melanges")

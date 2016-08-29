@@ -23,6 +23,12 @@ library
                      Handler.Common
                      Handler.Home
                      Handler.Comment
+                     Handler.Recette
+                     Handler.Materiau
+                     Handler.ResultatsMelanges
+                     Handler.Camions
+                     Handler.Carte
+                     Handler.ResultatsSocEco
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
@@ -101,6 +107,12 @@ test-suite test
     other-modules:     Handler.CommentSpec
                        Handler.CommonSpec
                        Handler.HomeSpec
+                       Handler.Recette
+                       Handler.Materiau
+                       Handler.ResultatsMelanges
+                       Handler.Camions
+                       Handler.Carte
+                       Handler.ResultatsSocEco
                        TestImport
     hs-source-dirs:    test
     ghc-options:       -Wall

@@ -1,0 +1,13 @@
+module Handler.Materiau where
+
+import Import
+
+getMateriauR :: Handler Html
+getMateriauR =
+  defaultLayout $ do
+    let title = "Création de matériaux" :: Text
+    $(widgetFile "sidebar/sidebar")
+    $(widgetFile "materiau/materiau")
+
+postMateriauR :: Handler Html
+postMateriauR = error "Not yet implemented: postMateriauR"

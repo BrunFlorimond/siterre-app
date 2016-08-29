@@ -1,0 +1,19 @@
+ <.sidebar .col-sm-2 .no-float>
+  <.brand>
+   <a href='/'> Siterre App
+  <.user>
+   Nom Prenom
+  <.list-nav>
+    <ul .nav .nav-pills .nav-stacked .list-nav>
+     <li .recette>
+      <a href=@{RecetteR}> Recette
+     <li .materiaux>
+      <a href=@{MateriauR}> Materiaux
+     <li .resultats-de-mélanges>
+      <a href=@{ResultatsMelangesR}> Resultats de mélanges
+     <li .camions>
+      <a href=@{CamionsR}> Camions
+     <li .carte>
+      <a href=@{CarteR}> Carte
+     <li .resultats-socio-économiques>
+      <a href=@{ResultatsSocEcoR}> Resultats Socio-Eco

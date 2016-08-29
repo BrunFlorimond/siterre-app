@@ -1,0 +1,230 @@
+
+./Settings/StaticFiles.hs,54
+module Settings.StaticFiles Settings.StaticFiles0,1
+
+./test/Handler/CommentSpec.hs,82
+module Handler.CommentSpec Handler.CommentSpec0,1
+spec spec5,6
+spec spec6,7
+
+./test/Handler/CarteSpec.hs,78
+module Handler.CarteSpec Handler.CarteSpec0,1
+spec spec4,5
+spec spec5,6
+
+./test/Handler/CamionsSpec.hs,82
+module Handler.CamionsSpec Handler.CamionsSpec0,1
+spec spec4,5
+spec spec5,6
+
+./test/Handler/ResultatsSocEcoSpec.hs,98
+module Handler.ResultatsSocEcoSpec Handler.ResultatsSocEcoSpec0,1
+spec spec4,5
+spec spec5,6
+
+./test/Handler/HomeSpec.hs,76
+module Handler.HomeSpec Handler.HomeSpec0,1
+spec spec4,5
+spec spec5,6
+
+./test/Handler/RecetteSpec.hs,82
+module Handler.RecetteSpec Handler.RecetteSpec0,1
+spec spec4,5
+spec spec5,6
+
+./test/Handler/ResultatsMelangesSpec.hs,102
+module Handler.ResultatsMelangesSpec Handler.ResultatsMelangesSpec0,1
+spec spec4,5
+spec spec5,6
+
+./test/Handler/MateriauSpec.hs,84
+module Handler.MateriauSpec Handler.MateriauSpec0,1
+spec spec4,5
+spec spec5,6
+
+./test/Handler/CommonSpec.hs,80
+module Handler.CommonSpec Handler.CommonSpec0,1
+spec spec4,5
+spec spec5,6
+
+./test/Spec.hs,0
+
+./test/TestImport.hs,279
+module TestImportTestImport0,1
+runDB runDB16,17
+runDB runDB17,18
+runDBWithApp runDBWithApp21,22
+runDBWithApp runDBWithApp22,23
+withApp withApp25,26
+withApp withApp26,27
+wipeDB wipeDB39,40
+wipeDB wipeDB40,41
+getTables getTables48,49
+getTables getTables49,50
+
+./Application.hs,835
+module ApplicationApplication1,2
+makeFoundation makeFoundation53,54
+makeFoundation makeFoundation54,55
+makeApplication makeApplication88,89
+makeApplication makeApplication89,90
+makeLogWare makeLogWare95,96
+makeLogWare makeLogWare96,97
+warpSettings warpSettings110,111
+warpSettings warpSettings111,112
+getApplicationDev getApplicationDev125,126
+getApplicationDev getApplicationDev126,127
+getAppSettings getAppSettings133,134
+getAppSettings getAppSettings134,135
+develMain develMain137,138
+develMain develMain138,139
+appMain appMain141,142
+appMain appMain142,143
+getApplicationRepl getApplicationRepl164,165
+getApplicationRepl getApplicationRepl165,166
+shutdownApp shutdownApp172,173
+shutdownApp shutdownApp173,174
+handler handler181,182
+handler handler182,183
+db db185,186
+db db186,187
+
+./Model.hs,24
+module Model Model2,3
+
+./Handler/ResultatsMelanges.hs,162
+module Handler.ResultatsMelanges Handler.ResultatsMelanges0,1
+getResultatsMelangesR getResultatsMelangesR4,5
+getResultatsMelangesR getResultatsMelangesR5,6
+
+./Handler/Recette.hs,168
+module Handler.Recette Handler.Recette0,1
+getRecetteR getRecetteR4,5
+getRecetteR getRecetteR5,6
+postRecetteR postRecetteR13,14
+postRecetteR postRecetteR14,15
+
+./Handler/Carte.hs,148
+module Handler.Carte Handler.Carte0,1
+getCarteR getCarteR4,5
+getCarteR getCarteR5,6
+postCarteR postCarteR12,13
+postCarteR postCarteR13,14
+
+./Handler/Home.hs,258
+module Handler.Home Handler.Home0,1
+getHomeR getHomeR14,15
+getHomeR getHomeR15,16
+postHomeR postHomeR25,26
+postHomeR postHomeR26,27
+sampleForm sampleForm39,40
+sampleForm sampleForm40,41
+commentIds commentIds44,45
+commentIds commentIds45,46
+
+./Handler/Comment.hs,106
+module Handler.Comment Handler.Comment0,1
+postCommentR postCommentR4,5
+postCommentR postCommentR5,6
+
+./Handler/Camions.hs,168
+module Handler.Camions Handler.Camions0,1
+getCamionsR getCamionsR4,5
+getCamionsR getCamionsR5,6
+postCamionsR postCamionsR12,13
+postCamionsR postCamionsR13,14
+
+./Handler/ResultatsSocEco.hs,150
+module Handler.ResultatsSocEco Handler.ResultatsSocEco0,1
+getResultatsSocEcoR getResultatsSocEcoR4,5
+getResultatsSocEcoR getResultatsSocEcoR5,6
+
+./Handler/Common.hs,161
+module Handler.Common Handler.Common1,2
+getFaviconR getFaviconR9,10
+getFaviconR getFaviconR10,11
+getRobotsR getRobotsR14,15
+getRobotsR getRobotsR15,16
+
+./Handler/Materiau.hs,178
+module Handler.Materiau Handler.Materiau0,1
+getMateriauR getMateriauR4,5
+getMateriauR getMateriauR5,6
+postMateriauR postMateriauR12,13
+postMateriauR postMateriauR13,14
+
+./app/main.hs,30
+main main3,4
+main main4,5
+
+./app/devel.hs,30
+main main4,5
+main main5,6
+
+./app/DevelMain.hs,274
+module DevelMain DevelMain30,31
+update update46,47
+update update47,48
+shutdown shutdown82,83
+shutdown shutdown83,84
+tidStoreNum tidStoreNum92,93
+tidStoreNum tidStoreNum93,94
+modifyStoredIORef modifyStoredIORef95,96
+modifyStoredIORef modifyStoredIORef96,97
+
+./Settings.hs,1430
+module Settings Settings6,7
+import import10,11
+data AppSettings AppSettings24,25
+data AppSettings = AppSettingsAppSettings24,25
+    { appStaticDir appStaticDir25,26
+    , appDatabaseConf appDatabaseConf27,28
+    , appRoot appRoot29,30
+    , appHost appHost32,33
+    , appPort appPort34,35
+    , appIpFromHeader appIpFromHeader36,37
+    , appDetailedRequestLogging appDetailedRequestLogging40,41
+    , appShouldLogAll appShouldLogAll42,43
+    , appReloadTemplates appReloadTemplates44,45
+    , appMutableStatic appMutableStatic46,47
+    , appSkipCombining appSkipCombining48,49
+    , appCopyright appCopyright52,53
+    , appAnalytics appAnalytics54,55
+instance instance58,59
+widgetFileSettings widgetFileSettings90,91
+widgetFileSettings widgetFileSettings91,92
+combineSettings combineSettings94,95
+combineSettings combineSettings95,96
+widgetFile widgetFile100,101
+widgetFile widgetFile101,102
+configSettingsYmlBS configSettingsYmlBS107,108
+configSettingsYmlBS configSettingsYmlBS108,109
+configSettingsYmlValue configSettingsYmlValue111,112
+configSettingsYmlValue configSettingsYmlValue112,113
+compileTimeAppSettings compileTimeAppSettings115,116
+compileTimeAppSettings compileTimeAppSettings116,117
+combineStylesheets combineStylesheets127,128
+combineStylesheets combineStylesheets128,129
+combineScripts combineScripts132,133
+combineScripts combineScripts133,134
+
+./Foundation.hs,404
+module Foundation Foundation0,1
+data App App17,18
+data App = AppApp17,18
+    { appSettings appSettings18,19
+    , appStatic appStatic19,20
+    , appConnPool appConnPool20,21
+    , appHttpManager appHttpManager21,22
+    , appLogger appLogger22,23
+type Form Form40,41
+type Form x x40,41
+instance instance44,45
+unsafeHandler unsafeHandler166,167
+unsafeHandler unsafeHandler167,168
+
+./Import.hs,25
+module ImportImport0,1
+
+./Import/NoFoundation.hs,51
+module Import.NoFoundationImport.NoFoundation0,1

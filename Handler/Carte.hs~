@@ -1,0 +1,13 @@
+module Handler.Carte where
+
+import Import
+
+getCarteR :: Handler Html
+getCarteR =
+      defaultLayout $ do
+    let title = "Spécification des trajets" :: Text
+    $(widgetFile "sidebar/sidebar")
+    $(widgetFile "carte/carte")
+
+postCarteR :: Handler Html
+postCarteR = error "Not yet implemented: postCarteR"
