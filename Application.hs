@@ -1,4 +1,5 @@
 {-# OPTIONS_GHC -fno-warn-orphans #-}
+{-# LANGUAGE NoImplicitPrelude #-}
 module Application
     ( getApplicationDev
     , appMain
@@ -41,6 +42,9 @@ import Handler.ResultatsMelanges
 import Handler.Camions
 import Handler.Carte
 import Handler.ResultatsSocEco
+import Handler.CamionsDelete
+import Handler.RecetteDelete
+import Handler.MateriauDelete
 
 -- This line actually creates our YesodDispatch instance. It is the second half
 -- of the call to mkYesodData which occurs in Foundation.hs. Please see the

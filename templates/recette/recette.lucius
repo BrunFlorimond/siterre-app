@@ -7,6 +7,14 @@ display: table-cell;
 float: none;
 }
 
+titre-recette {
+ text-align: center;
+}
+
+.enregistrer {
+ text-align:center;
+}
+
 .title {
 text-align: center;
 border-bottom: solid 1px #E3E3E3;

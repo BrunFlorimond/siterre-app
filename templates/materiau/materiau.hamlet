@@ -1,5 +1,19 @@
 <.col-sm-10 .no-float>
  <.title>
   <h1> #{title}
- <.main-recette>
-  <button .btn .btn-success">Hello
+ <.main-recette .row>
+  <.formulaire-materiau .col-sm-5>
+   <.row .style="text-align:center;">
+    <h2> Nouveau matériau
+    <form enctype=#{enctype} method=post action=@{MateriauR} novalidate>
+     ^{formWidget}
+     <.enregistrer-materiau>
+      <input type="submit" class="btn btn-success input-valeur-carac" value="Enregistrer">
+  <.list-materiaux .col-sm-7 .col-md-5 .col-md-offset-2>
+   <.titre>
+    <h2> Materiaux
+   $forall mat <- materiaux
+    ^{materiauWidget mat}
+   
+   
+   

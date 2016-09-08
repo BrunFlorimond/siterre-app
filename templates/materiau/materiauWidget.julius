@@ -1,0 +1,11 @@
+$(document).ready(function(){
+ $(#{toJSON $ "#materiau-" <> toPathPiece materiauId}).on('click',function(event){
+   event.preventDefault();
+   $.ajax({
+   url:   "@{MateriauDeleteR materiauId}",
+   type: 'DELETE',
+   success: function(){location.href="@{MateriauR}"}
+   });
+ })
+
+})

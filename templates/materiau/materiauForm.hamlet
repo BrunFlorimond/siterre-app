@@ -1,0 +1,25 @@
+<.col-sm-12>
+  <p> Nom : ^{fvInput nomView}
+  <.formulaire-dynamique-materiau">
+   <.titres-formulaires>
+    <.col-sm-7> <h3> Caractéristiques
+    <.col-sm-5> <h3> Valeurs
+   <.list-input>
+    $forall (caracV,valueV,maybeLabel) <- views
+     <.col-sm-7> ^{fvInput caracV}
+      $maybe label <- maybeLabel
+       #{label}
+      $nothing
+       Erreur
+     <.col-sm-5> ^{fvInput valueV}
+   <.input-minmax>
+    <.col-sm-7> Proportion minimum
+    <.col-sm-5>
+     <.input-group>
+      ^{fvInput valueMinView}
+      <span class="input-group-addon">%
+    <.col-sm-7> Proportion maximum
+    <.col-sm-5>
+     <.input-group>
+      ^{fvInput valueMaxView}
+      <span class="input-group-addon">%

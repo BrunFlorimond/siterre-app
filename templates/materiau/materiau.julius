@@ -1,0 +1,20 @@
+$(document).ready(function(){
+
+ disable($(".input-nom-materiau"))
+
+$(".input-nom-materiau").on('keyup',function(e){
+
+ disable($(".input-nom-materiau"))
+
+  });
+})
+
+function disable(el) {
+
+if (el.val().length > 3){
+  $(".input-valeur-carac").prop('disabled', false)
+  } else {
+     $(".input-valeur-carac").prop('disabled', true)
+  }
+
+}

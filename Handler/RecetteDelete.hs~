@@ -1,0 +1,6 @@
+module Handler.RecetteDelete where
+
+import Import
+
+deleteRecetteDeleteR :: ElementId -> Handler Html
+deleteRecetteDeleteR elementId = error "Not yet implemented: deleteRecetteDeleteR"

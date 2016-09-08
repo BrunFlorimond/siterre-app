@@ -1,0 +1,18 @@
+<.well>
+ <.attributs-elements>
+  <ul .list-group>
+   <li .list-group-item>
+     Caractéristique : #
+      $maybe c <- car
+       <span .badge>#{c}
+      $nothing
+       <span .badge> Erreur
+   <li .list-group-item> Méthode de mélange : #
+      $maybe a <- ag
+       <span .badge>#{a}
+      $nothing
+       <span .badge>Erreur
+ <.supprimer style="text-align:center;">
+  <button class="btn btn-danger" id="element-#{toPathPiece elId}"> Supprimer
+
+ 

@@ -1,0 +1,12 @@
+<.camion .well>
+ <.titre-camion>
+  <h2> #{camionNom camion}
+ <.img-camion>
+  <img src=@{StaticR img_camion_png} height=100 width=100 align=middle>
+ <.attributs-camion>
+  <ul .list-group>
+   <li .list-group-item .conso-carburant> Consommation de carburant <span class=badge> #{camionConso camion} l/100km
+   <li .list-group-item .tonnage-max> Tonnage maximum <span class=badge> #{camionTonnageMax camion} tonnes
+   <li .list-group-item .volume-max> Volume maximum <span class=badge> #{camionVolumeMax camion} m3
+   <li .list-group-item .prix-location> Prix de location <span class=badge>  #{camionPrixLocation camion} €/jour
+ <button class="btn btn-danger" id="camion-#{toPathPiece camionId}"> Supprimer

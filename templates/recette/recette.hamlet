@@ -2,4 +2,16 @@
  <.title>
   <h1> #{title}
  <.main-recette>
-  <button .btn .btn-success">Hello
+  <.col-sm-4>
+   <.titre-recette>
+    <h2> Ajout d'une caractéristique et de sa méthode de mélange
+   <form enctype=#{enctype} method=POST action=@{RecetteR}>
+    ^{formRecette}
+    <.enregistrer>
+     <button class="btn btn-success"> Ajouter
+  <.col-sm-8 .col-md-6 .col-md-offset-2>
+   <.titre-recette>
+    <h2> Caractéristiques ajoutées
+    <.list-recettes>
+     $forall el <- listElText
+      ^{elementWidget el}

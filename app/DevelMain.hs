@@ -27,7 +27,7 @@
 --
 -- There is more information about this approach,
 -- on the wiki: https://github.com/yesodweb/yesod/wiki/ghci
-
+{-# LANGUAGE NoImplicitPrelude #-}
 module DevelMain where
 
 import Prelude

@@ -27,6 +27,11 @@ module Handler.HomeSpec Handler.HomeSpec0,1
 spec spec4,5
 spec spec5,6
 
+./test/Handler/RecetteDeleteSpec.hs,94
+module Handler.RecetteDeleteSpec Handler.RecetteDeleteSpec0,1
+spec spec4,5
+spec spec5,6
+
 ./test/Handler/RecetteSpec.hs,82
 module Handler.RecetteSpec Handler.RecetteSpec0,1
 spec spec4,5
@@ -47,6 +52,16 @@ module Handler.CommonSpec Handler.CommonSpec0,1
 spec spec4,5
 spec spec5,6
 
+./test/Handler/CamionsDeleteSpec.hs,94
+module Handler.CamionsDeleteSpec Handler.CamionsDeleteSpec0,1
+spec spec4,5
+spec spec5,6
+
+./test/Handler/MateriauDeleteSpec.hs,96
+module Handler.MateriauDeleteSpec Handler.MateriauDeleteSpec0,1
+spec spec4,5
+spec spec5,6
+
 ./test/Spec.hs,0
 
 ./test/TestImport.hs,279
@@ -62,32 +77,32 @@ wipeDB wipeDB40,41
 getTables getTables48,49
 getTables getTables49,50
 
-./Application.hs,835
-module ApplicationApplication1,2
-makeFoundation makeFoundation53,54
-makeFoundation makeFoundation54,55
-makeApplication makeApplication88,89
-makeApplication makeApplication89,90
-makeLogWare makeLogWare95,96
-makeLogWare makeLogWare96,97
-warpSettings warpSettings110,111
-warpSettings warpSettings111,112
-getApplicationDev getApplicationDev125,126
-getApplicationDev getApplicationDev126,127
-getAppSettings getAppSettings133,134
-getAppSettings getAppSettings134,135
-develMain develMain137,138
-develMain develMain138,139
-appMain appMain141,142
-appMain appMain142,143
-getApplicationRepl getApplicationRepl164,165
-getApplicationRepl getApplicationRepl165,166
-shutdownApp shutdownApp172,173
-shutdownApp shutdownApp173,174
-handler handler181,182
-handler handler182,183
-db db185,186
-db db186,187
+./Application.hs,838
+module ApplicationApplication2,3
+makeFoundation makeFoundation57,58
+makeFoundation makeFoundation58,59
+makeApplication makeApplication92,93
+makeApplication makeApplication93,94
+makeLogWare makeLogWare99,100
+makeLogWare makeLogWare100,101
+warpSettings warpSettings114,115
+warpSettings warpSettings115,116
+getApplicationDev getApplicationDev129,130
+getApplicationDev getApplicationDev130,131
+getAppSettings getAppSettings137,138
+getAppSettings getAppSettings138,139
+develMain develMain141,142
+develMain develMain142,143
+appMain appMain145,146
+appMain appMain146,147
+getApplicationRepl getApplicationRepl168,169
+getApplicationRepl getApplicationRepl169,170
+shutdownApp shutdownApp176,177
+shutdownApp shutdownApp177,178
+handler handler185,186
+handler handler186,187
+db db189,190
+db db190,191
 
 ./Model.hs,24
 module Model Model2,3
@@ -97,12 +112,34 @@ module Handler.ResultatsMelanges Handler.ResultatsMelanges0,1
 getResultatsMelangesR getResultatsMelangesR4,5
 getResultatsMelangesR getResultatsMelangesR5,6
 
-./Handler/Recette.hs,168
+./Handler/Recette.hs,673
 module Handler.Recette Handler.Recette0,1
-getRecetteR getRecetteR4,5
-getRecetteR getRecetteR5,6
-postRecetteR postRecetteR13,14
-postRecetteR postRecetteR14,15
+handlerName handlerName7,8
+handlerName handlerName8,9
+title title10,11
+title title11,12
+getRecetteR getRecetteR13,14
+getRecetteR getRecetteR14,15
+postRecetteR postRecetteR23,24
+postRecetteR postRecetteR24,25
+nouveauElRecette nouveauElRecette37,38
+nouveauElRecette nouveauElRecette38,39
+caracP caracP42,43
+caracP caracP43,44
+agregP agregP45,46
+agregP agregP46,47
+revLookup revLookup48,49
+revLookup revLookup49,50
+listElements listElements51,52
+elementWidget elementWidget53,54
+elementWidget elementWidget54,55
+getInfosRecetteP getInfosRecetteP56,57
+getInfosRecetteP getInfosRecetteP57,58
+
+./Handler/RecetteDelete.hs,150
+module Handler.RecetteDelete Handler.RecetteDelete0,1
+deleteRecetteDeleteR deleteRecetteDeleteR4,5
+deleteRecetteDeleteR deleteRecetteDeleteR5,6
 
 ./Handler/Carte.hs,148
 module Handler.Carte Handler.Carte0,1
@@ -127,12 +164,24 @@ module Handler.Comment Handler.Comment0,1
 postCommentR postCommentR4,5
 postCommentR postCommentR5,6
 
-./Handler/Camions.hs,168
+./Handler/Camions.hs,402
 module Handler.Camions Handler.Camions0,1
-getCamionsR getCamionsR4,5
-getCamionsR getCamionsR5,6
-postCamionsR postCamionsR12,13
-postCamionsR postCamionsR13,14
+title title5,6
+handlerName handlerName6,7
+getCamionsR getCamionsR8,9
+getCamionsR getCamionsR9,10
+postCamionsR postCamionsR16,17
+postCamionsR postCamionsR17,18
+nouveauCamionForm nouveauCamionForm29,30
+nouveauCamionForm nouveauCamionForm30,31
+listDeCamions listDeCamions40,41
+camionWidget camionWidget42,43
+camionWidget camionWidget43,44
+
+./Handler/MateriauDelete.hs,156
+module Handler.MateriauDelete Handler.MateriauDelete0,1
+deleteMateriauDeleteR deleteMateriauDeleteR4,5
+deleteMateriauDeleteR deleteMateriauDeleteR5,6
 
 ./Handler/ResultatsSocEco.hs,150
 module Handler.ResultatsSocEco Handler.ResultatsSocEco0,1
@@ -146,20 +195,240 @@ getFaviconR getFaviconR10,11
 getRobotsR getRobotsR14,15
 getRobotsR getRobotsR15,16
 
-./Handler/Materiau.hs,178
+./Handler/Materiau.hs,750
 module Handler.Materiau Handler.Materiau0,1
-getMateriauR getMateriauR4,5
-getMateriauR getMateriauR5,6
-postMateriauR postMateriauR12,13
-postMateriauR postMateriauR13,14
+handlerName handlerName7,8
+handlerName handlerName8,9
+title title9,10
+title title10,11
+re re12,13
+re re13,14
+getMateriauR getMateriauR15,16
+getMateriauR getMateriauR16,17
+postMateriauR postMateriauR24,25
+postMateriauR postMateriauR25,26
+listForm listForm38,39
+listForm listForm39,40
+caracP caracP62,63
+caracP caracP63,64
+revLookup revLookup66,67
+revLookup revLookup67,68
+sequenceTuple2 sequenceTuple269,70
+sequenceTuple2 sequenceTuple270,71
+--listRecette --listRecette72,73
+listRecette listRecette73,74
+listMateriau listMateriau75,76
+materiauWidget materiauWidget77,78
+materiauWidget materiauWidget78,79
+getLabels getLabels80,81
+getLabels getLabels81,82
+
+./Handler/CamionsDelete.hs,150
+module Handler.CamionsDelete Handler.CamionsDelete0,1
+deleteCamionsDeleteR deleteCamionsDeleteR4,5
+deleteCamionsDeleteR deleteCamionsDeleteR5,6
 
 ./app/main.hs,30
-main main3,4
-main main4,5
-
-./app/devel.hs,30
 main main4,5
 main main5,6
+
+./app/ScreenOneLogic.hs,1270
+module ScreenOneLogic ScreenOneLogic2,3
+type Proportion Proportion18,19
+data Agreg Agreg22,23
+data Agreg = Append Append22,23
+            | Arithmetic Arithmetic23,24
+            | Geometric Geometric24,25
+            | Harmonic Harmonic25,26
+            | Quadratic Quadratic26,27
+class Sol Sol29,30
+class Sol Sol29,30
+  nom nom30,31
+  valeur valeur31,32
+  enTonne enTonne32,33
+  enVolume enVolume33,34
+instance instance37,38
+type Ingredient Ingredient53,54
+type Recette Recette75,76
+data Quantite Quantite80,81
+data Quantite = Volume Volume80,81
+data Quantite = Volume Double | Tonne Tonne80,81
+class Vec Vec82,83
+class Vec Vec82,83
+  addVec addVec83,84
+  multScal multScal84,85
+  neg neg85,86
+mkIngredient mkIngredient117,118
+mkIngredient mkIngredient118,119
+melanger melanger123,124
+melanger melanger124,125
+zeroing zeroing134,135
+zeroing zeroing135,136
+melangeur melangeur142,143
+melangeur melangeur143,144
+reducteur reducteur158,159
+reducteur reducteur159,160
+melangerTous melangerTous178,179
+melangerTous melangerTous180,181
+scenarioCreateur scenarioCreateur187,188
+scenarioCreateur scenarioCreateur189,190
+creeProportion creeProportion204,205
+creeProportion creeProportion207,208
+
+./app/Carac.hs,293
+data Carac Carac5,6
+data Carac = NomNom5,6
+  | PhPh6,7
+  | Granu4Granu47,8
+  | Granu50Granu508,9
+  | MacroPoMacroPo9,10
+  | MoMo10,11
+  | AzoteAzote11,12
+  | PolsenPolsen12,13
+  | CecCec13,14
+  | ReserveUReserveU14,15
+  | DensiteDensite15,16
+  | Calcite Calcite16,17
+
+./app/ScreenTwoLogic.hs,4806
+module ScreenTwoLogic ScreenTwoLogic0,1
+type Localisation Localisation11,12
+data Plateforme Plateforme14,15
+data Plateforme = Plateforme Plateforme14,15
+data Plateforme = Plateforme PrixMelange PrixStocke PrixAnalyse Camion Materiau | PlateformeSMat PlateformeSMat14,15
+type PrixMelange PrixMelange16,17
+type PrixStocke PrixStocke17,18
+type PrixAnalyse PrixAnalyse18,19
+data Gisement Gisement31,32
+data Gisement = GisementGisement31,32
+     {  gMateriau gMateriau32,33
+      , gQuantite gQuantite33,34
+      , gCamion gCamion34,35
+      , gPrix gPrix35,36
+instance instance38,39
+data Chantier Chantier44,45
+data Chantier = Chantier Chantier44,45
+data Site Site46,47
+data Site = SiteSite46,47
+     { loc loc47,48
+      ,typesite typesite48,49
+data TypeSite TypeSite51,52
+data TypeSite = Gi Gi51,52
+data TypeSite = Gi Gisement | Pl Pl51,52
+data TypeSite = Gi Gisement | Pl Plateforme | Ch Ch51,52
+type Depart Depart53,54
+type Arrivee Arrivee54,55
+data Distance Distance55,56
+data Distance = DistanceDistance55,56
+     {  km km56,57
+      , temps temps57,58
+data Trajet Trajet61,62
+data Trajet = TrajetTrajet61,62
+     {  depart depart62,63
+      , distance distance63,64
+type NomSite NomSite66,67
+data Carte Carte68,69
+data Carte = Carte Carte68,69
+type PetiteNoria PetiteNoria70,71
+type GrandeNoria GrandeNoria71,72
+data DataTrajet DataTrajet73,74
+data DataTrajet = DataTrajetDataTrajet73,74
+      { trajet trajet74,75
+      , location location75,76
+      , carburant carburant76,77
+      , dataSite dataSite77,78
+data DataSite DataSite81,82
+data DataSite = DataSite DataSite81,82
+data DataSite = DataSite Quantite | DataPf DataPf81,82
+data DataSite = DataSite Quantite | DataPf Melange Stockage Analyse | DataCh DataCh81,82
+type Achat Achat83,84
+type Melange Melange84,85
+type Stockage Stockage85,86
+type Analyse Analyse86,87
+type Incorp Incorp87,88
+data TrajetCout TrajetCout89,90
+data TrajetCout = TrajetCoutTrajetCout89,90
+     {  tousTrajets tousTrajets90,91
+      , clocation clocation91,92
+      , ccarburant ccarburant92,93
+      , cCO2 cCO293,94
+      , eCO2 eCO294,95
+      , cachat cachat95,96
+      , cMelange cMelange96,97
+      , cStockage cStockage97,98
+      , cAnalyse cAnalyse98,99
+      , dureeLocation dureeLocation99,100
+      , litreCarburant litreCarburant100,101
+data Couts Couts103,104
+data Couts = Couts Couts103,104
+data ErrorCouts ErrorCouts105,106
+data ErrorCouts = ErrCalculPNoria ErrCalculPNoria105,106
+data ErrorCouts = ErrCalculPNoria | ErrCalculIngredient ErrCalculIngredient105,106
+data ErrorCouts = ErrCalculPNoria | ErrCalculIngredient | ErrCalculGdNoria ErrCalculGdNoria105,106
+data ErrorCouts = ErrCalculPNoria | ErrCalculIngredient | ErrCalculGdNoria | ErrParams ErrParams105,106
+data ErrorCouts = ErrCalculPNoria | ErrCalculIngredient | ErrCalculGdNoria | ErrParams | ErrMateriau ErrMateriau105,106
+data InfoTrajet InfoTrajet107,108
+data InfoTrajet = InfoTrajet InfoTrajet107,108
+type Duree Duree109,110
+type QtyCarburant QtyCarburant110,111
+data Params Params112,113
+data Params = ParamsParams112,113
+  {  prixCO2 prixCO2113,114
+   , prixCarburant prixCarburant114,115
+dureeJournee dureeJournee117,118
+dureeDemiJournee dureeDemiJournee118,119
+emissionsParLitre emissionsParLitre119,120
+calculer calculer122,123
+calculer calculer123,124
+calculerCouts calculerCouts126,127
+calculerCouts calculerCouts127,128
+calculerCout calculerCout130,131
+calculerCout calculerCout131,132
+calculercout calculercout134,135
+calcCoutPNoria calcCoutPNoria138,139
+calcCoutPNoria calcCoutPNoria139,140
+calcCoutNoria calcCoutNoria142,143
+calcCoutNoria calcCoutNoria143,144
+produireTrajets produireTrajets175,176
+produireTrajets produireTrajets176,177
+verifierPresence verifierPresence179,180
+verifierPresence verifierPresence180,181
+grandeNoria grandeNoria192,193
+grandeNoria grandeNoria193,194
+appliquerMatPlateforme appliquerMatPlateforme199,200
+appliquerMatPlateforme appliquerMatPlateforme200,201
+petiteNoria petiteNoria210,211
+petiteNoria petiteNoria211,212
+proportion proportion227,228
+proportion proportion228,229
+dispatch dispatch233,234
+dispatch dispatch234,235
+dispatch' dispatch'242,243
+dispatch' dispatch'243,244
+safeCompare safeCompare263,264
+safeCompare safeCompare264,265
+calculData calculData269,270
+calculData calculData270,271
+calculerDuree calculerDuree286,287
+calculerDuree calculerDuree287,288
+nbAllerRetours nbAllerRetours290,291
+nbAllerRetours nbAllerRetours291,292
+calculerCarburant calculerCarburant306,307
+calculerCarburant calculerCarburant307,308
+calculerMSA calculerMSA310,311
+calculerMSA calculerMSA311,312
+
+./app/MateriauCarac.hs,208
+module MateriauCarac MateriauCarac0,1
+data CaracValeur CaracValeur6,7
+data CaracValeur = Id Id6,7
+data CaracValeur = Id String | Val Val6,7
+type Materiau Materiau7,8
+type TupleCarac TupleCarac8,9
+
+./app/devel.hs,30
+main main5,6
+main main6,7
 
 ./app/DevelMain.hs,274
 module DevelMain DevelMain30,31
@@ -172,56 +441,64 @@ tidStoreNum tidStoreNum93,94
 modifyStoredIORef modifyStoredIORef95,96
 modifyStoredIORef modifyStoredIORef96,97
 
+./app/AgregP.hs,343
+data AgregP AgregP5,6
+data AgregP = AppendP AppendP5,6
+data AgregP = AppendP | ArithmeticP ArithmeticP5,6
+data AgregP = AppendP | ArithmeticP | GeometricP GeometricP5,6
+data AgregP = AppendP | ArithmeticP | GeometricP | HarmonicP HarmonicP5,6
+data AgregP = AppendP | ArithmeticP | GeometricP | HarmonicP | QuadraticP QuadraticP5,6
+
 ./Settings.hs,1430
-module Settings Settings6,7
-import import10,11
-data AppSettings AppSettings24,25
-data AppSettings = AppSettingsAppSettings24,25
-    { appStaticDir appStaticDir25,26
-    , appDatabaseConf appDatabaseConf27,28
-    , appRoot appRoot29,30
-    , appHost appHost32,33
-    , appPort appPort34,35
-    , appIpFromHeader appIpFromHeader36,37
-    , appDetailedRequestLogging appDetailedRequestLogging40,41
-    , appShouldLogAll appShouldLogAll42,43
-    , appReloadTemplates appReloadTemplates44,45
-    , appMutableStatic appMutableStatic46,47
-    , appSkipCombining appSkipCombining48,49
-    , appCopyright appCopyright52,53
-    , appAnalytics appAnalytics54,55
-instance instance58,59
-widgetFileSettings widgetFileSettings90,91
+module Settings Settings7,8
+import import11,12
+data AppSettings AppSettings25,26
+data AppSettings = AppSettingsAppSettings25,26
+    { appStaticDir appStaticDir26,27
+    , appDatabaseConf appDatabaseConf28,29
+    , appRoot appRoot30,31
+    , appHost appHost33,34
+    , appPort appPort35,36
+    , appIpFromHeader appIpFromHeader37,38
+    , appDetailedRequestLogging appDetailedRequestLogging41,42
+    , appShouldLogAll appShouldLogAll43,44
+    , appReloadTemplates appReloadTemplates45,46
+    , appMutableStatic appMutableStatic47,48
+    , appSkipCombining appSkipCombining49,50
+    , appCopyright appCopyright53,54
+    , appAnalytics appAnalytics55,56
+instance instance59,60
 widgetFileSettings widgetFileSettings91,92
-combineSettings combineSettings94,95
+widgetFileSettings widgetFileSettings92,93
 combineSettings combineSettings95,96
-widgetFile widgetFile100,101
+combineSettings combineSettings96,97
 widgetFile widgetFile101,102
-configSettingsYmlBS configSettingsYmlBS107,108
+widgetFile widgetFile102,103
 configSettingsYmlBS configSettingsYmlBS108,109
-configSettingsYmlValue configSettingsYmlValue111,112
+configSettingsYmlBS configSettingsYmlBS109,110
 configSettingsYmlValue configSettingsYmlValue112,113
-compileTimeAppSettings compileTimeAppSettings115,116
+configSettingsYmlValue configSettingsYmlValue113,114
 compileTimeAppSettings compileTimeAppSettings116,117
-combineStylesheets combineStylesheets127,128
+compileTimeAppSettings compileTimeAppSettings117,118
 combineStylesheets combineStylesheets128,129
-combineScripts combineScripts132,133
+combineStylesheets combineStylesheets129,130
 combineScripts combineScripts133,134
+combineScripts combineScripts134,135
 
 ./Foundation.hs,404
-module Foundation Foundation0,1
-data App App17,18
-data App = AppApp17,18
-    { appSettings appSettings18,19
-    , appStatic appStatic19,20
-    , appConnPool appConnPool20,21
-    , appHttpManager appHttpManager21,22
-    , appLogger appLogger22,23
-type Form Form40,41
-type Form x x40,41
-instance instance44,45
-unsafeHandler unsafeHandler166,167
+module Foundation Foundation1,2
+data App App18,19
+data App = AppApp18,19
+    { appSettings appSettings19,20
+    , appStatic appStatic20,21
+    , appConnPool appConnPool21,22
+    , appHttpManager appHttpManager22,23
+    , appLogger appLogger23,24
+type Form Form41,42
+type Form x x41,42
+instance instance45,46
 unsafeHandler unsafeHandler167,168
+unsafeHandler unsafeHandler168,169
 
 ./Import.hs,25
 module ImportImport0,1

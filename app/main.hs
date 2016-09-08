@@ -1,3 +1,4 @@
+{-# LANGUAGE NoImplicitPrelude #-}
 import Prelude     (IO)
 import Application (appMain)
 

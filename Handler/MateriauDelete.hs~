@@ -1,0 +1,6 @@
+module Handler.MateriauDelete where
+
+import Import
+
+deleteMateriauDeleteR :: MateriauPId -> Handler Html
+deleteMateriauDeleteR materiauPId = error "Not yet implemented: deleteMateriauDeleteR"

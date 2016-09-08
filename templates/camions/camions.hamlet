@@ -1,5 +1,17 @@
 <.col-sm-10 .no-float>
  <.title>
   <h1> #{title}
- <.main-recette>
-  <button .btn .btn-success">Hello
+ <.main-camion>
+   <.col-sm-4>
+    <.titre-camion>
+     <h2> Création d'un nouveau camion
+    <form method=post action=@{CamionsR} enctype=#{enctype}>
+     ^{widget}
+     <.enregistrer>
+      <button class="btn btn-success"> Enregistrer
+   <.col-sm-8 .col-md-6 .col-md-offset-2>
+    <.titre-camion>
+     <h2> Camions disponibles
+    <.list-camions>
+     $forall cam <- camionList
+      ^{camionWidget cam}

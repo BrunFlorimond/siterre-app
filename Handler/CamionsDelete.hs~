@@ -1,0 +1,6 @@
+module Handler.CamionsDelete where
+
+import Import
+
+deleteCamionsDeleteR :: CamionId -> Handler Html
+deleteCamionsDeleteR camionId = error "Not yet implemented: deleteCamionsDeleteR"

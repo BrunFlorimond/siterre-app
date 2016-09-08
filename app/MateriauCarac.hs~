@@ -1,0 +1,4 @@
+module MateriauCarac where
+
+data CaracValeur = Id String | Val Double deriving (Eq,Show)
+type Materiau = M.Map Carac CaracValeur

@@ -1,0 +1,15 @@
+<.well>
+ <p> Caractéristique : #
+   $maybe c <- car
+    #{c}
+   $nothing
+    Erreur
+ <p> Méthode de mélange : #
+   $maybe a <- ag
+    #{a}
+   $nothing
+    Erreur
+ <.supprimer style="text-align:center;">
+  <button class="btn btn-danger" id="element-#{toPathPiece elId}"> Supprimer
+
+ 

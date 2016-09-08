@@ -1,0 +1,10 @@
+$(document).ready(function(){
+ $(#{toJSON $ "#element-" <> toPathPiece elId}).on('click',function(event){
+   event.preventDefault();
+   $.ajax({
+   url:   "@{CamionsDeleteR camionId}",
+   type: 'DELETE',
+   success: function(){location.href="@{RecetteR}"}
+   });
+ })
+})

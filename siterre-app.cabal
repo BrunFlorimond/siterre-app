@@ -16,7 +16,12 @@ library
     exposed-modules: Application
                      Foundation
                      Import
+                     ScreenOneLogic
+                     ScreenTwoLogic
                      Import.NoFoundation
+                     Carac
+                     AgregP
+                     MateriauCarac
                      Model
                      Settings
                      Settings.StaticFiles
@@ -29,6 +34,10 @@ library
                      Handler.Camions
                      Handler.Carte
                      Handler.ResultatsSocEco
+                     Handler.CamionsDelete
+                     Handler.RecetteDelete
+                     Handler.MateriauDelete
+                     
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
@@ -39,7 +48,6 @@ library
     extensions: TemplateHaskell
                 QuasiQuotes
                 OverloadedStrings
-                NoImplicitPrelude
                 MultiParamTypeClasses
                 TypeFamilies
                 GADTs
@@ -90,6 +98,7 @@ library
                  , time
                  , case-insensitive
                  , wai
+                 , combinat
 
 executable         siterre-app
     if flag(library-only)
@@ -113,6 +122,9 @@ test-suite test
                        Handler.Camions
                        Handler.Carte
                        Handler.ResultatsSocEco
+                       Handler.CamionsDelete
+                       Handler.RecetteDelete
+                       Handler.MateriauDelete
                        TestImport
     hs-source-dirs:    test
     ghc-options:       -Wall
@@ -149,3 +161,4 @@ test-suite test
                  , classy-prelude
                  , classy-prelude-yesod
                  , aeson
+                 , combinat

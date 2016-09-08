@@ -7,12 +7,12 @@ display: table-cell;
 float: none;
 }
 
-.titre-camion {
-text-align: center;
+.titre-recette {
+ text-align: center;
 }
 
 .enregistrer {
-text-align: center;
+ text-align:center;
 }
 
 .title {

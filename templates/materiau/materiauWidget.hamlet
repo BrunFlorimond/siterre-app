@@ -1,0 +1,17 @@
+<.materiau .well>
+ <.titre-materiau>
+  <h2>#{materiauPNom materiauP}
+ <ul class="list-group">
+  $forall ma <- materiauPCarac materiauP
+   <li class="list-group-item">
+    $maybe title <- revLookup (fst ma) caracP
+     #{title}
+    $nothing
+     Erreur
+    <span class="badge">
+     #{snd ma}
+ <ul class="list-group">
+  <li class="list-group-item"> Proportion minimum <span class="badge"> #{materiauPMin materiauP} %
+  <li class="list-group-item"> Proportion maximum <span class="badge"> #{materiauPMax materiauP} %
+ <.supprimer-materiau style="text-align:center;">
+  <button class="btn btn-danger" id="materiau-#{toPathPiece materiauId}"> Supprimer

@@ -13,3 +13,6 @@
 /camions CamionsR GET POST
 /carte CarteR GET POST
 /resultats-socio-eco ResultatsSocEcoR GET
+/Camions/#CamionId CamionsDeleteR DELETE
+/recette/#RecettePId RecetteDeleteR DELETE
+/materiau/#MateriauPId MateriauDeleteR DELETE
